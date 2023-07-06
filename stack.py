@@ -31,3 +31,12 @@ print(stack)
 print("Elements moved from stack")
 print("stack.pop()")
 print("stack.pop()")
+
+#another metod to define stack
+
+
+class Node:
+    def __init__(self,what):
+
+    
+
