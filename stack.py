@@ -1,8 +1,9 @@
 from collections import deque
 
 # deque is short term ab out double-ended queue. It's in short data structure, which is working like list, but with additional fuctionality
-#  
+#  Its naturally better choice to create stack than regular list
 
+# using deque
 my_deque = deque()
 
 my_deque.append(1)  # Dodanie elementu 1 na koniec kolejki
@@ -14,3 +15,19 @@ print(item)  # Output: 1
 
 item = my_deque.popleft()  # Usunięcie i zwrócenie pierwszego elementu kolejki
 print(item)  # Output: 2
+
+#using regular list as a stack
+
+stack = []
+stack.append("element1")
+stack.append("element2")
+stack.append("element3")
+
+print(stack)
+
+#poping elements from stack using pop()
+#LIFO order
+
+print("Elements moved from stack")
+print("stack.pop()")
+print("stack.pop()")
