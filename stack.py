@@ -1,4 +1,5 @@
 from collections import deque
+import heapq
 
 # deque is short term ab out double-ended queue. It's in short data structure, which is working like list, but with additional fuctionality
 #  Its naturally better choice to create stack than regular list
@@ -136,3 +137,45 @@ print("Klucze słownika:", my_dict.keys())
 print("Wartości słownika:", my_dict.values())
 
 print("Pary klucz-wartość słownika:", my_dict.items())
+
+#heap
+
+# Tworzenie pustego kopca
+heap = []
+
+# Dodawanie elementów do kopca
+heapq.heappush(heap, 4)
+heapq.heappush(heap, 2)
+heapq.heappush(heap, 6)
+heapq.heappush(heap, 1)
+heapq.heappush(heap, 3)
+
+print("Kopiec po dodaniu elementów:", heap)
+
+# Pobieranie najmniejszego elementu z kopca
+smallest = heapq.heappop(heap)
+print("Najmniejszy element:", smallest)
+print("Kopiec po usunięciu najmniejszego elementu:", heap)
+
+# Sprawdzanie najmniejszego elementu w kopcu (bez usuwania)
+smallest = heap[0]
+print("Najmniejszy element (bez usuwania):", smallest)
+
+# Konwertowanie listy na kopiec
+lst = [9, 5, 7, 1, 8]
+heapq.heapify(lst)
+print("Kopiec utworzony z listy:", lst)
+
+# Łączenie dwóch kopców
+heap1 = [1, 3, 5]
+heap2 = [2, 4, 6]
+merged_heap = heapq.merge(heap1, heap2)
+print("Połączony kopiec:", list(merged_heap))
+
+# Wyświetlanie n najmniejszych elementów z kopca
+n_smallest = heapq.nsmallest(3, heap)
+print("Najmniejsze 3 elementy:", n_smallest)
+
+# Wyświetlanie n największych elementów z kopca
+n_largest = heapq.nlargest(2, lst)
+print("Największe 2 elementy:", n_largest)
