@@ -78,3 +78,33 @@ print("Połączona tupla:", new_tuple)
 
 repeated_tuple = my_tuple * 3
 print("Powtórzona tupla:", repeated_tuple)
+
+
+#sets
+
+my_set = {1, 2, 3, 4, 5}
+
+my_set.add(6)
+
+print("Zbiór:", my_set)
+
+my_set.remove(3)
+print("Zbiór po usunięciu elementu:", my_set)
+
+print("Czy 2 istnieje w zbiorze?", 2 in my_set)
+print("Czy 7 istnieje w zbiorze?", 7 in my_set)
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+union_set = set1.union(set2)
+print("Suma zbiorów:", union_set)
+
+intersection_set = set1.intersection(set2)
+print("Przekrój zbiorów:", intersection_set)
+
+difference_set = set1.difference(set2)
+print("Różnica zbiorów (set1 - set2):", difference_set)
+
+subset = {1, 2}
+print("Czy {1, 2} jest podzbiorem set1?", subset.issubset(set1))
