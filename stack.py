@@ -63,3 +63,18 @@ my_list.pop()
 print("Lista po usunięciu ostatniego elementu:", my_list)
 
 print("Długość listy:", len(my_list))
+
+#tuple
+
+my_tuple = (1, 2, 3, 4, 5)
+
+print("Pierwszy element:", my_tuple[0])
+print("Trzeci element:", my_tuple[2])
+
+print("Długość tupli:", len(my_tuple))
+
+new_tuple = my_tuple + (6, 7, 8)
+print("Połączona tupla:", new_tuple)
+
+repeated_tuple = my_tuple * 3
+print("Powtórzona tupla:", repeated_tuple)
