@@ -1,5 +1,6 @@
 from collections import deque
 import heapq
+import array
 
 # deque is short term ab out double-ended queue. It's in short data structure, which is working like list, but with additional fuctionality
 #  Its naturally better choice to create stack than regular list
@@ -179,3 +180,35 @@ print("Najmniejsze 3 elementy:", n_smallest)
 # Wyświetlanie n największych elementów z kopca
 n_largest = heapq.nlargest(2, lst)
 print("Największe 2 elementy:", n_largest)
+
+# Tworzenie tablicy liczb całkowitych
+int_array = array.array('i', [1, 2, 3, 4, 5])
+
+# Wyświetlanie zawartości tablicy
+print("Tablica liczb całkowitych:", int_array)
+
+# Dostęp do elementów tablicy za pomocą indeksów
+print("Pierwszy element:", int_array[0])
+print("Trzeci element:", int_array[2])
+
+# Modyfikowanie elementu tablicy
+int_array[1] = 10
+print("Tablica po zmianie elementu:", int_array)
+
+# Dodawanie elementu na koniec tablicy
+int_array.append(6)
+print("Tablica po dodaniu elementu:", int_array)
+
+# Usuwanie elementu z tablicy
+del int_array[2]
+print("Tablica po usunięciu elementu:", int_array)
+
+# Wyświetlanie typu tablicy
+print("Typ tablicy:", int_array.typecode)
+
+# Wyświetlanie rozmiaru tablicy
+print("Rozmiar tablicy:", int_array.itemsize)
+
+# Konwertowanie tablicy na listę
+int_list = int_array.tolist()
+print("Tablica skonwertowana na listę:", int_list)
