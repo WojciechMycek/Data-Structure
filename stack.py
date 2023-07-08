@@ -6,17 +6,14 @@ from collections import deque
 # using deque
 my_deque = deque()
 
-my_deque.append(1)  # Dodanie elementu 1 na koniec kolejki
-my_deque.appendleft(2)  # Dodanie elementu 2 na początek kolejki
-print(my_deque)  # Output: deque([2, 1])
+my_deque.append(1) 
+my_deque.appendleft(2) 
+print(my_deque) 
 
-item = my_deque.pop()  # Usunięcie i zwrócenie ostatniego elementu kolejki
-print(item)  # Output: 1
+item = my_deque.pop() 
+print(item)  
+item = my_deque.popleft()  
 
-item = my_deque.popleft()  # Usunięcie i zwrócenie pierwszego elementu kolejki
-print(item)  # Output: 2
-
-#using regular list as a stack
 
 stack = []
 stack.append("element1")
@@ -32,11 +29,37 @@ print("Elements moved from stack")
 print("stack.pop()")
 print("stack.pop()")
 
-#another metod to define stack
+#lists
+
+my_list = [1, 2, 3, 4, 5]
 
 
-class Node:
-    def __init__(self,what):
+my_list.append(6)
 
-    
 
+print("Lista po dodaniu elementu:", my_list)
+
+
+print("Pierwszy element:", my_list[0])
+print("Trzeci element:", my_list[2])
+
+
+my_list[1] = 10
+print("Lista po zmianie elementu:", my_list)
+
+del my_list[2]
+print("Lista po usunięciu elementu:", my_list)
+
+my_list.insert(2, 7)
+print("Lista po wstawieniu elementu:", my_list)
+
+my_list.sort()
+print("Posortowana lista:", my_list)
+
+my_list.reverse()
+print("Odwrócona lista:", my_list)
+
+my_list.pop()
+print("Lista po usunięciu ostatniego elementu:", my_list)
+
+print("Długość listy:", len(my_list))
