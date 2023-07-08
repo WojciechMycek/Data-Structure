@@ -108,3 +108,31 @@ print("Różnica zbiorów (set1 - set2):", difference_set)
 
 subset = {1, 2}
 print("Czy {1, 2} jest podzbiorem set1?", subset.issubset(set1))
+
+#dictionary:
+
+my_dict = {'jabłko': 5, 'banan': 3, 'gruszka': 2}
+
+
+print("Liczba jabłek:", my_dict['jabłko'])
+print("Liczba bananów:", my_dict['banan'])
+
+
+my_dict['gruszka'] = 4
+print("Słownik po zmianie wartości:", my_dict)
+
+
+my_dict['pomarańcza'] = 6
+print("Słownik po dodaniu nowej pary klucz-wartość:", my_dict)
+
+
+del my_dict['jabłko']
+print("Słownik po usunięciu pary klucz-wartość:", my_dict)
+
+
+print("Klucze słownika:", my_dict.keys())
+
+
+print("Wartości słownika:", my_dict.values())
+
+print("Pary klucz-wartość słownika:", my_dict.items())
